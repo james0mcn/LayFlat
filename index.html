@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LayFlat Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="init()">
+  <h1>LayFlat Calculator</h1>
+  <p style= "line-height: 2;"></p>
+  <label for="machineType">Machine Type:</label>
+  <select name="machineType" id="machineType">
+  <option value="o1">SL-10</option>
+  <option value="o2">SL-77</option>
+  </select>
+  <p style= "line-height: 2;"></p>
+  <p> Product Diameter: <input type="number" id="diaInput" placeholder="Enter diameter" style="font-style: italic;">
+  </p>
+
+
+  <button onclick="CalcLayFlat()" style="font-size: 1.2em; padding: 10px 20px;" >Calculate</button>
+  <p style="font-size: 0.8em; font-style: italic;"> Circumference: <span id="circumference" style="font-size: 0.8em;"></span></p>
+  <p style="font-size: 0.8em; font-style: italic;"> Raw Layflat: <span id="rawLF" style="font-size: 0.8em;"></span></p>
+  <p style= "line-height: 2;"></p>
+  <p style="font-size: 1.2em; font-style: oblique;">Result: <span style="font-size: 1.2em; font-style: oblique;" id="result"></span></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
